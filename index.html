@@ -200,28 +200,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<script>
-    const coverInput = document.getElementById('addCover');
-    const coverImg = document.getElementById('coverImg');
-    coverInput.addEventListener('change', (event) => {
-        URL.revokeObjectURL(coverImg.src);
-        const file = event.target.files[0];
-        file.preview = URL.createObjectURL(file);
-        coverImg.src = file.preview;
-        event.target.value = null;
-    })
-</script>
-<script>
-    $(document).ready(function () {
-        $('.wrap').slick({
-            dots: true,
-            arrows: false,
-            infinite: true,
-            speed: 600,
-            slidesToShow: 1,
-            adaptiveHeight: true
-        });
-    })
-</script>
-
+<script src="./js/main.js"></script>
 </html>
