@@ -1,6 +1,6 @@
 // Slick slide
 $(document).ready(function () {
-  $(".wrapper").slick({
+  $(".main").slick({
     dots: true,
     arrows: false,
     infinite: true,
