@@ -2,6 +2,7 @@ body {
   background: linear-gradient(-25deg, #224572, #e23550, #e7aa5f) no-repeat fixed top right;
   font-family: "Open Sans", sans-serif !important;
   margin: 0;
+  font-size: 15px!important;
   color: #fff !important;
 }
 
@@ -217,4 +218,10 @@ i {
 
 .slick-dots li.slick-active:before {
   opacity: 1;
+}
+
+@media (max-height: 660px) {
+  .profile {
+    margin: 1.5em auto 3rem;
+  }
 }
