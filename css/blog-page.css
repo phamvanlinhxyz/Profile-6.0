@@ -18,21 +18,20 @@
   border: 0;
   outline: 0;
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.185);
+  background-color: rgba(255, 255, 255, 0.2);
   margin: 0 0 12px;
   padding: 4px 30px 4px 15px;
-  color: #fff;
 }
 
 .search-icon {
-  color: rgb(199, 199, 199);
   position: absolute;
   right: 3px;
   top: 4px;
+  opacity: .6;
 }
 
 .blog-body a:hover {
-  color: rgb(80 156 255) !important;
+  color: rgb(30 131 255) !important
 }
 
 .blog-body .post img {
@@ -40,6 +39,6 @@
   border-radius: 8px;
 }
 
-.post-label {
-  color: rgb(199, 199, 199);
+.post-label:not(a) {
+  opacity: .8;
 }

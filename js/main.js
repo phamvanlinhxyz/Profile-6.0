@@ -20,3 +20,11 @@ coverInput.addEventListener("change", (event) => {
   coverImg.src = file.preview;
   event.target.value = null;
 });
+
+// Dark switch
+const darkSwitch = document.querySelector(".dark-switch");
+const darkCheck = document.querySelector(".dark-check");
+darkSwitch.addEventListener("click", () => {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+});
