@@ -50,7 +50,7 @@ i {
 .profile {
   width: 350px !important;
   height: 540px !important;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   margin: 3rem auto;
   padding: 1.5rem;
@@ -71,7 +71,7 @@ i {
 }
 
 .info-maxim {
-  color: rgb(30 131 255) !important;
+  color: rgb(0 114 255) !important;
 }
 
 .profile-above p {
@@ -241,32 +241,6 @@ i {
 .dark-switch:hover:after {
   bottom: 5.5rem;
   opacity: 1;
-}
-
-.dark-mode .profile {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.dark-mode .slick-dots button {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.dark-mode .slick-dots .slick-active button {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.dark-mode .slick-dots li:before {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.dark-mode .dark-switch:before {
-  color: rgba(0, 0, 0, 0.4);
-  content: "\f185";
-}
-
-.dark-mode .dark-switch:after {
-  color: rgba(0, 0, 0, 0.4);
-  content: "Light";
 }
 
 @media (max-height: 660px) {

@@ -1,5 +1,5 @@
-// Slick slide
-$(document).ready(function () {
+$(document).ready(() => {
+  // Slick slide
   $(".main").slick({
     dots: true,
     arrows: false,
@@ -8,23 +8,28 @@ $(document).ready(function () {
     slidesToShow: 1,
     adaptiveHeight: true,
   });
-});
+  const page = localStorage.getItem("page") || 0;
+  $(".main").slick("slickGoTo", page);
+  $(".main").on("beforeChange", (event, slick, currentSlide, nextSlide) => {
+    localStorage.setItem("page", nextSlide);
+  });
 
-// Change cover fb
-const coverInput = document.getElementById("addCover");
-const coverImg = document.getElementById("coverImg");
-coverInput.addEventListener("change", (event) => {
-  URL.revokeObjectURL(coverImg.src);
-  const file = event.target.files[0];
-  file.preview = URL.createObjectURL(file);
-  coverImg.src = file.preview;
-  event.target.value = null;
-});
+  // Change facebook cover
+  $("#addCover").change((e) => {
+    const file = e.target.files[0];
+    const coverElm = $("#coverImg");
+    URL.revokeObjectURL(coverElm.attr("src"));
+    coverImg.src = URL.createObjectURL(file);
+    e.target.value = null;
+  });
 
-// Dark switch
-const darkSwitch = document.querySelector(".dark-switch");
-const darkCheck = document.querySelector(".dark-check");
-darkSwitch.addEventListener("click", () => {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
+  // Dark switch
+  const body = $(document.body);
+  localStorage.getItem("mode") == "dark" && body.addClass("dark-mode");
+  $(".dark-switch").click(() => {
+    localStorage.getItem("mode") == "dark"
+      ? localStorage.setItem("mode", "light")
+      : localStorage.setItem("mode", "dark");
+    body.toggleClass("dark-mode");
+  });
 });

@@ -14,6 +14,7 @@
 }
 
 .search-input {
+  color: rgb(255 255 255);
   width: 100%;
   border: 0;
   outline: 0;
@@ -27,11 +28,11 @@
   position: absolute;
   right: 3px;
   top: 4px;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .blog-body a:hover {
-  color: rgb(30 131 255) !important
+  color: rgb(30 131 255) !important;
 }
 
 .blog-body .post img {
@@ -40,5 +41,5 @@
 }
 
 .post-label:not(a) {
-  opacity: .8;
+  opacity: 0.8;
 }
