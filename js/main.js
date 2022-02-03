@@ -32,4 +32,22 @@ $(document).ready(() => {
       : localStorage.setItem("mode", "dark");
     body.toggleClass("dark-mode");
   });
+
+  localStorage.setItem("music", "pause");
+  $(".play-btn").click(() => {
+    if (localStorage.getItem("music") == "play") {
+      $(".music-audio").trigger("pause");
+      $(".play-btn").removeClass("play");
+      localStorage.setItem("music", "pause");
+    } else {
+      $(".music-audio").trigger("play");
+      $(".play-btn").addClass("play");
+      localStorage.setItem("music", "play");
+    }
+  });
+
+  $(".music-audio").on("ended", () => {
+    $(".play-btn").removeClass("play");
+    localStorage.setItem("music", "pause");
+  });
 });

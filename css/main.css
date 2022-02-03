@@ -243,6 +243,43 @@ i {
   opacity: 1;
 }
 
+.play-btn:before {
+  position: fixed;
+  font-size: 40px;
+  bottom: 2rem;
+  left: 2rem;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.4);
+  content: "\f04b";
+  font-family: "Font Awesome 5 Pro";
+}
+
+.play-btn.play:before {
+  content: "\f04c";
+}
+
+.play-btn:after {
+  position: fixed;
+  font-size: 18px;
+  font-weight: 600;
+  bottom: 3.5rem;
+  left: 2rem;
+  color: rgba(255, 255, 255, 0.4);
+  content: "Play";
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.play-btn.play:after {
+  left: 1.5rem;
+  content: "Pause";
+}
+
+.play-btn:hover:after {
+  bottom: 5.5rem;
+  opacity: 1;
+}
+
 @media (max-height: 660px) {
   .profile {
     margin: 1.5em auto 3rem;
