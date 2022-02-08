@@ -218,7 +218,7 @@ i {
 .dark-switch:before {
   position: fixed;
   font-size: 40px;
-  bottom: 2rem;
+  bottom: 1rem;
   right: 2rem;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.4);
@@ -230,7 +230,7 @@ i {
   position: fixed;
   font-size: 18px;
   font-weight: 600;
-  bottom: 3.5rem;
+  bottom: 2.5rem;
   right: 2rem;
   color: rgba(255, 255, 255, 0.4);
   content: "Dark";
@@ -239,14 +239,14 @@ i {
 }
 
 .dark-switch:hover:after {
-  bottom: 5.5rem;
+  bottom: 4.5rem;
   opacity: 1;
 }
 
 .play-btn:before {
   position: fixed;
   font-size: 40px;
-  bottom: 2rem;
+  bottom: 1rem;
   left: 2rem;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.4);
@@ -262,7 +262,7 @@ i {
   position: fixed;
   font-size: 18px;
   font-weight: 600;
-  bottom: 3.5rem;
+  bottom: 2.5rem;
   left: 2rem;
   color: rgba(255, 255, 255, 0.4);
   content: "Play";
@@ -276,7 +276,7 @@ i {
 }
 
 .play-btn:hover:after {
-  bottom: 5.5rem;
+  bottom: 4.5rem;
   opacity: 1;
 }
 

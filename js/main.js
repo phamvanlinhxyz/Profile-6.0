@@ -33,6 +33,7 @@ $(document).ready(() => {
     body.toggleClass("dark-mode");
   });
 
+  // Play music
   localStorage.setItem("music", "pause");
   $(".play-btn").click(() => {
     if (localStorage.getItem("music") == "play") {
@@ -51,3 +52,4 @@ $(document).ready(() => {
     localStorage.setItem("music", "pause");
   });
 });
+
